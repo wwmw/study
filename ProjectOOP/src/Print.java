@@ -1,15 +1,19 @@
 
 class Print {
 
-	public static String delimiter = "";
+	public Print(String delimiter) {
+		this.delimiter = delimiter;
+	}
 	
-	public static void A() {
+	public String delimiter = "";
+	
+	public void A() {
 		System.out.println(delimiter);
 		System.out.println("AA");
 		System.out.println("AAA");
 	}
 	
-	public static void B() {
+	public void B() {
 		System.out.println(delimiter);
 		System.out.println("BB");
 		System.out.println("BBB");

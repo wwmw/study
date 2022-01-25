@@ -21,6 +21,10 @@ class Cal2 extends Cal{
 		System.out.println("오버라이딩");
 		return v1 + v2;
 	}
+	public int sum(int v1, int v2, int v3) {
+		System.out.println("오버로딩");
+		return v1 + v2 + v3;
+	}
 }
 
 public class InheritanceApp {
@@ -31,5 +35,7 @@ public class InheritanceApp {
 		Cal2 c2 = new Cal2(2, 1);
 		System.out.println(c2.sum());
 		System.out.println(c2.minus());
+		System.out.println(c2.sum(2, 1, 1));
 		}
+	
 }

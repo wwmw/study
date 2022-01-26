@@ -18,11 +18,11 @@ class Cal2 extends Cal{
 		return v1 - v2;
 	}
 	public int sum() {
-		System.out.println("오버라이딩");
+		System.out.println("Overriding");
 		return v1 + v2;
 	}
 	public int sum(int v1, int v2, int v3) {
-		System.out.println("오버로딩");
+		System.out.println("Overloading");
 		return v1 + v2 + v3;
 	}
 }

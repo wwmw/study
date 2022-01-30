@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Code08 {
+public class Code11 {
 
 	public static void main(String[] args) {
 		
@@ -17,17 +17,18 @@ public class Code08 {
 		
 		scan.close();
 		
-		int sum = 0;
-		int max = data[0];
+		int count = 0;
 		for(int i=0; i<data.length; i++) {
-			sum += data[i];
-			if(max < data[i]) {
-				max = data[i];
+			for(int j=i+1; j<data.length; j++) {
+				if(data[i] == data[j]) {
+					count++;
+				}
 			}
 		}
-		
-		System.out.println("합계 : " + sum);
-		System.out.println("최대값 : " + max);
+		System.out.println("중복된 정수 쌍의 개수 : " + count);
 	}
-
 }
+
+//사용자로부터 n개의 정수를 입력받는다.
+//입력받은 순서대로 배열에 저장한다.
+//중복된 정수 쌍의 개수를 카운트하여 출력한다.

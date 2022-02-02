@@ -16,16 +16,35 @@ public class Code13 {
 		}
 		
 		scan.close();
-		
-		// 소수판단 알고리즘
+		System.out.println("에러체크");
+		for(int i=0; i<data.length; i++) {
+			System.out.println("data[" + i + "] = " + data[i]);
+		}
 
 		int max = 0;
-		int val = 0;
 		for(int i=0; i<data.length; i++) {
-			val = val * 10 + data[i];
-			
-			
+			for(int j=i; j<data.length; j++) {
+				int val = 0;
+				for(int k=i; k<=j; k++) {
+					val = val*10 + data[k];
+				}
+				boolean isPrime = true;
+				for(int l=2; l<=val/2 && isPrime; l++) {
+					if(val % l == 0) {
+						isPrime = false;
+					}
+				}
+				if(isPrime && val > max && val > 1) {
+					max = val;
+				}
+			}
 		}
+		if(max > 0) {
+			System.out.println("소수들 중 최대값 : " + max);
+		} else {
+			System.out.println("값이 존재하지 않음");
+		}
+		
 	}
 }
 

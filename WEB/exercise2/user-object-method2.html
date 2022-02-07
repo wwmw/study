@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>사용자 정의 객체</title>
+    <script type="text/javascript">
+      function info(){
+        document.writeln("학생 정보 : 이름은 " + this.name + "이고, 학과는 " + this.dept + "입니다.");
+      }
+      function student(identify, name, department){
+        this.id = identify;
+        this.name = name;
+        this.dept = department;
+        this.stinfo = info;
+      }
+      st = new student("2013001", "김소연", "컴퓨터공학");
+    </script>
+  </head>
+  <body>
+    <h2>학생 정보 출력</h2>
+    <script type="text/javascript">
+      document.writeln("학번 : " + st.id + "<br>");
+      document.writeln(st.stinfo() + "<br>");
+    </script>
+  </body>
+</html>

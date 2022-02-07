@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>exFunction1</title>
+  </head>
+  <body>
+    <h1>return</h1>
+    <script>
+      function onReturn(left, right){
+        return left+right;
+      }
+      document.write('before value + '+onReturn(2, 3)+' + after value<br>');
+      var i = onReturn(2, 3);
+      document.write(i);
+    </script>
+    <h1>no return</h1>
+    <script>
+      function noReturn(x, y){
+        document.write(x+y)
+      }
+      document.write('<br>');
+      document.write('before value + '+noReturn(2, 3)+' + after value<br>');
+      noReturn(2, 3);
+    </script>
+  </body>
+</html>

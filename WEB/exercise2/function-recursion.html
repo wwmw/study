@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>재귀 함수</title>
+    <script type="text/javascript">
+      function sum(n){
+        if(n <= 1)
+          return 1;
+        else return n + sum(n-1);
+      }
+    </script>
+  </head>
+  <body>
+    <h3>입력받은 수까지의 합</h3>
+    <script type="text/javascript">
+      var number = parseInt(prompt("1부터 몇 까지의 합을 구할까요?"));
+      document.write("1부터 " + number + "까지의 합은 : " + sum(number) + "입니다.");
+    </script>
+  </body>
+</html>

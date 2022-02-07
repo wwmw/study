@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>개인 연습</title>
+    <script>
+      if (document.querySelector('body').style.backgroundColor==='white') {
+        document.querySelectorAll('a').style.color = 'red'
+      } else {
+        document.querySelectorAll('a').style.color = 'green'
+      }
+    </script>
+  </head>
+  <body>
+    <h1><a href="index.html">종류와 순서</a></h1>
+    <div class="grid">
+      <ol>
+        <a href="html.html"><li>HTML</li></a>
+        <a href="css.html"><li>CSS</li></a>
+        <a href="js.html"><li>JavaScript</li></a>
+        <a href="jquery.html"><li>jQuery</li></a>
+        <a href="react.html"><li>react</li></a>
+        <li>Test List</li>
+      </ol>
+      <div>
+      <p>
+        <input type="button" value="DAY" onclick="
+          document.querySelector('body').style.backgroundColor='white'
+          document.querySelector('body').style.color='black'
+          ">
+        <input type="button" value="NIGHT" onclick="
+          document.querySelector('body').style.backgroundColor='black'
+          document.querySelector('body').style.color='white'
+        ">
+        <input type="button" value="DAY" onclick="
+          if(this.value === 'DAY'){
+            document.querySelector('body').style.backgroundColor='black'
+            document.querySelector('body').style.color='white'
+            this.value = 'NIGHT'
+          } else {
+            document.querySelector('body').style.backgroundColor='white'
+            document.querySelector('body').style.color='black'
+            this.value = 'DAY'
+          }
+        ">
+        <input type="button" value="TOGGLE" innervar="day" onclick="
+          if(this.innervar === 'day'){
+            document.querySelector('body').style.backgroundColor='black'
+            document.querySelector('body').style.color='white'
+            this.innervar = 'night'
+          } else {
+            document.querySelector('body').style.backgroundColor='white'
+            document.querySelector('body').style.color='black'
+            this.innervar = 'day'
+          }
+        ">
+        <input type="button" value="TOGGLE(refac)" onclick="
+          if(document.querySelector('body').style.backgroundColor === 'white'){
+            document.querySelector('body').style.backgroundColor='black'
+            document.querySelector('body').style.color='white'
+          } else {
+            document.querySelector('body').style.backgroundColor='white'
+            document.querySelector('body').style.color='black'
+            this.innervar = 'day'
+          }
+        ">
+      </p>
+
+        <h2>Index Page</h2>
+        <img src="img.jpg" alt="test">
+        <p>Index Page</p>
+      </div>
+    </div>
+  </body>
+</html>

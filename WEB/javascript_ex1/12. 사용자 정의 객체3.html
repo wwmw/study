@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>함수 외부 메소드 테스트</title>
+    <script type="text/javascript">
+      function inf(){
+        document.write(
+          this.memo + "을 사용하여 " + this.color + "을 표현하세요."
+        )
+      }
+
+      function exer(memo, color){
+        this.memo = memo;
+        this.color = color;
+        this.shoot = inf;
+      }
+
+      exe = new exer("메모장", "빨간색");
+    </script>
+  </head>
+  <body>
+    <h2>출력물에 undefined 확인하기</h2>
+    <script type="text/javascript">
+      document.write(exe.shoot() + "<br>");
+      document.write(exe.memo + "<br>");
+      document.write(exe.color + "<br>");
+    </script>
+  </body>
+</html>

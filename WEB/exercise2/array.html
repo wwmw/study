@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Array 객체</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      
+      var title = new Array(3);
+          title[0] = "W";
+          title[1] = "e";
+          title[2] = "b";
+
+      var title2 = title.join(".");
+      var title3 = new Array(" Programming");
+      var title4 = title2.concat(title3);
+
+      document.write("첫 번째 책 제목은 ");
+
+      for(i = 0; i < title.length; i++){
+        document.write(title[i]);
+      }
+
+      document.write("입니다.<br>두 번째 책 제목은 ")
+      document.write(title4 + "입니다.");
+    </script>
+  </body>
+</html>

@@ -6,7 +6,7 @@ public class Code15 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("배열의 크기를 입력하세요");
+		System.out.println("input array size");
 		int size = scan.nextInt();
 		int[] data = new int[size];
 		
@@ -21,7 +21,7 @@ public class Code15 {
 			
 			data[j+1] = tmp;
 			
-			System.out.print("배열 : ");
+			System.out.print("array : ");
 			for(int k=0; k<=i; k++)
 				System.out.print(data[k] + " ");
 			System.out.println();

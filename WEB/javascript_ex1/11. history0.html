@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>history_back page</title>
+    <script type="text/javascript">
+      function history_back(){
+        history.back();
+      }
+      function history_forward(){
+        history.forward();
+      }
+    </script>
+  </head>
+  <body>
+    <a href="11. history.html">메인 파일로 이동합니다.</a>
+
+    <form>
+      <h3>이전 페이지로 이동하기</h3>
+      <input type="button" value="이전으로 이동" onclick="history_back()"><br>
+      <h3>다음 페이지로 이동하기</h3>
+      <input type="button" value="다음으로 이동" onclick="history_forward()"><br>
+    </form>
+  </body>
+</html>

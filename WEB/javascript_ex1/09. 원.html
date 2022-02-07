@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function cal(a){
+        oval.result1.value = (a*a*Math.PI).toFixed(2);
+        oval.result2.value = (2*a*Math.PI).toFixed(2);
+      }
+    </script>
+    <h1>원의 넓이와 둘레</h1>
+    <form name="oval">
+      반지름 : <input type="text" name="radius" size="10">
+      <input type="button" value="전송" onclick="cal(radius.value)">
+      <br><br>
+      원의 넓이 : <input type="text" name="result1" size="10">
+      <br><br>
+      원의 둘레 : <input type="text" name="result2" size="10">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>클래스 스타일 만들기</title>
+    <style type="text/css">
+      p{background:yellow; color:blue}
+      p.italic{font-style:italic;}
+      .redtxt{color:red;}
+      .greentxt{color:green;}
+    </style>
+  </head>
+  <body>
+    <p>이 텍스트는 스타일의 적용을 받아 노랜 배경에 글자가 파란색으로 표시됩니다.</p>
+    <p class="redtxt">같은 요소지만 글자가 빨간색으로 표시됩니다.</p>
+    <p class="greentxt">같은 요소지만 글자가 녹색으로 표시됩니다.</p>
+    <h2 class="redtxt">p 요소가 아니라도 빨간 글자가 적용됩니다.</h2>
+    <h2 class="greentxt">p 요소가 아니라도 녹색 글자가 적용됩니다.</h2>
+    <p class="italic">p 요소에만 이탤릭 글자를 사용할 수 있습니다.</p>
+    <h2 class="italic">p 요소에만 적용되는 클래스이므로 적용되지 않습니다.</h2>
+  </body>
+</html>

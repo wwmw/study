@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>팩토리얼</title>
+    <script type="text/javascript">
+      function factorial(n){
+        if(n <= 1){
+          return 1;
+        } else {
+          return n * factorial(n-1);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a = parseInt(prompt("정수 입력", "정수"));
+      document.write(a + "의 팩토리얼 값은 " + factorial(a) +"입니다.<br>");
+      document.write(factorial(a));
+    </script>
+  </body>
+</html>

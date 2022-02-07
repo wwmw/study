@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>지역변수 및 전역변수</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a = 2;
+          b = 7;
+
+      function add(){
+        var a = 4;
+            c = 6;
+        document.write("a+b+c의 값은 : " + (a+b+c) + " 이다.<br>" + "<br>");
+      }
+
+      add();
+      document.write("a+b+c의 값은 : " + (a+b+c) + " 이다." + "<br>");
+    </script>
+  </body>
+</html>

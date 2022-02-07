@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>window 객체 사용</title>
+    <script type="text/javascript">
+      function browser_status(){
+        window.status = "상태 표시줄의 문자열이 변경되었습니다.";
+      }
+    </script>
+  </head>
+  <body onload="windows.defaultStatus='홈페이지 방문을 환영합니다.'">
+    <form>
+      <h3>확인 버튼을 누르면 상태 표시줄의 문자열이 변경됩니다.</h3>
+      <input type="button" value="확인" onclick="browser_status()"><br>
+    </form>
+  </body>
+</html>

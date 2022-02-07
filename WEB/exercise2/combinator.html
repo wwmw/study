@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> 결합자 </title>
+    <style type="text/css">
+      div > p {font-weight:bold; color:red;}
+      div + p {background:yellow; font-style:italic;}
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>div의 첫 번째 자식 p 요소</p>
+      <p>div의 두 번째 자식 p 요소</p>
+    </div>
+    <h3>div의 첫 번째 형제 h3 요소</h3>
+    <p>div의 두 번째 형제 p 요소</p>
+    <div>
+      <h3>div의 첫 번째 자식 h3 요소</h3>
+      <p>div의 두 번째 자식 p 요소</p>
+    </div>
+    <p>div의 첫 번째 형제 p 요소</p>
+  </body>
+</html>

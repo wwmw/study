@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>for-in문 예제</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a = new Array("사과", "바나나", "파인애플");
+      var b = " ";
+
+      for(var key in a){
+        b += "인덱스" + key + " 의 값은 : " + a[key];
+        b += "<br>"
+      }
+
+      document.write(b);
+
+    </script>
+  </body>
+</html>

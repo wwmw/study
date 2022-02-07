@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form 태그 예제</title>
+  </head>
+  <body>
+    <form>
+      <h3>텍스트</h3>
+      name : <input type="text" name="text"><br><br>
+      age : <input type="text" name="age" size="5"><br><br>
+      address : <input type="text" name="address" size="40"><br><br>
+      url : <input type="text" name="url" value="http://"><br><br>
+
+      <h3>체크리스트</h3>
+      <select name="checklist" size="5" [multiple]>
+        <option>항목1</option>
+        <option>항목2</option>
+        <option>항목3</option>
+        <option>항목4</option>
+        <option>항목5</option>
+      </select><br><br>
+
+      <h3>체크박스</h3>
+      <input type="checkbox" name="color" value="blue">blue<br>
+      <input type="checkbox" name="color" value="red">red<br><br>
+
+      <h3>라디오</h3>
+      <input type="radio" name="radio" value="one">one
+      <input type="radio" name="radio" value="two">two
+      <input type="radio" name="radio" value="three">three
+      <input type="radio" name="radio" value="four">four
+
+      <h3>텍스트 영역</h3>
+      <textarea name="memo" rows="8" cols="80"></textarea><br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>

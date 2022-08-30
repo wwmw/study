@@ -1,0 +1,30 @@
+package com.newlecture.web.filter;
+
+import java.io.IOException;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
+
+@WebFilter("/*")
+public class CharacterEncodingFilter implements Filter {
+
+	@Override
+	public void doFilter(ServletRequest request
+			, ServletResponse response
+			, FilterChain chain)
+			throws IOException, ServletException {
+
+		System.out.println("before filter");
+		
+		// 사용자가 보내는 데이터를 UTF-8로 읽으라는 코드
+		request.setCharacterEncoding("UTF-8");
+		chain.doFilter(request, response);
+		
+		System.out.println("after filter");
+	}
+
+}
